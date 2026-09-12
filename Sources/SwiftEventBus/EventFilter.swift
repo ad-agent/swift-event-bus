@@ -1,3 +1,4 @@
+import Foundation
 /// Type-erased event filter for conditional event handling.
 public struct EventFilter<E: Sendable>: Sendable {
     private let predicate: @Sendable (E) -> Bool

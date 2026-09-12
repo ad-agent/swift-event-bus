@@ -1,3 +1,4 @@
+import Foundation
 /// Keeps a bounded history of emitted events for replay.
 public actor EventHistory<E: Sendable> {
     private var buffer: [E] = []
