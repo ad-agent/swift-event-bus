@@ -1,0 +1,1 @@
+/// Metrics tracking for the event bus.\npublic actor EventMetrics: Sendable {\n    public private(set) var emitted = 0\n    public private(set) var delivered = 0\n    public func recordEmission() { emitted += 1 }\n    public func recordDelivery() { delivered += 1 }\n}
